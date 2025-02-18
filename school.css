@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: serif;
+}
+body{
+    background-color: #001;
+    display: flex;
+}
+.imge1-box{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imge1-box img{
+    width: 100%;
+}
+.profiele{
+    display: flex;
+    align-items: center;
+}
+.meun{
+    background-color: #123;
+    width: 50px;
+    height: 220vh; 
+    padding: 20px;
+    overflow: hidden;
+    flex-shrink: 0;
+    transition: .5s;
+    border-radius: 20px;
+}
+.meun:hover{
+    width: 260px;
+    height: 260vh; 
+}
+ul{
+ list-style: none;
+ position: relative;
+ height: 100%;
+}
+.wq{
+    margin-top: 20px;
+}
+ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    transition: .4s;
+    text-align: center;
+}
+ul li a:hover, .active,.data-info .box:hover, td:hover{
+    background: black;
+}
+.loge-out{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.loge-out a{
+    background-color: red;
+}
+ul li a i{
+    font-size: 30px;
+}
+.content{   
+    width: 120%;
+    margin: 10px;
+}
+.content a {
+    text-decoration: none;
+}
+.title-info{
+background-color:#123;
+padding: 10px;
+display: flex;
+align-content: center;
+align-items: center;
+justify-content: space-between;
+border-radius: 10px;
+margin-bottom: 10px ;
+}
+.data-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-info .box{
+    background-color: gray;
+    height: 250px;
+    width: 350px;
+    flex-grow: 1  ;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.data-info .box i{
+    font-size: 40px;
+}
+.data-info .box.data{
+    text-align: center;
+}
+.data-info .box .data span{
+    font-size: 50px;
+    text-decoration: none;
+}
+table{
+width: 100%;
+text-align: center;
+align-items: center;
+border-spacing: 5px;
+padding-bottom: 10px;
+}
+td, th{
+background-color: #123;
+height: 100px;
+width: 20px;
+border-radius: 20px;
+}
+th{
+    background-color: #123;
+    margin-top: 10px;
+}
+.price, .count{
+    padding: 10px;
+    border-radius: 10px;
+}
+.title-info{
+    padding-bottom: 10px;
+}
+footer{
+    background-color:#123;
+    border-radius: 50px;
+}
+.socia{
+    display: flex;
+    justify-content: center;
+}
+
+.socia a{
+    padding-top: 20px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 30px;
+    border-radius: 50%;
+}
+.socia a i{
+   font-size: 2em;
+   color: rgb(34, 0, 255);
+}
+.socia a:hover{
+    background-color: rgb(0, 129, 250);
+    transition: 0.5s;
+}
+.socia a :hover i{
+    color: rgb(255, 255, 255) ;
+    transition: 0.5s;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+}
+.footerNav ul li a{
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerAzz{
+    background-color: #011;
+    text-align: center;
+}
+.main a{
+    background-color: green;
+}
+.Fotter{
+    background-color: #333;
+    color: white;   
+    text-align: center;
+    padding: 1px;
+    position: fixed;
+    width: 130%;
+    bottom: 0;
+}
+
+.edit-link::before {
+    content: ""; /* Edit icon */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(50%, 50%);
+    color: white;
+    font-size: 14px;
+}
+.edit-link {
+    text-decoration: none; /* Removes underline */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #0d3b66; /* Dark blue */
+    border-radius: 5px;
+    position: relative;
+}
+@media (max-width: 50px) {
+    body {
+        flex-direction: column;
+    }
+
+    .meun {
+        width: 70px;
+        height: auto;
+    }
+
+    .data-info .box {
+        width: 48%;
+    }
+
+    .content {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .socia a {
+        margin: 10px;
+        padding: 12px;
+    }
+
+    .Fotter {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 78px) {
+    .meun {
+        width: 60px;
+    }
+
+    .data-info .box {
+        width: 48%;
+    }
+
+    ul li a {
+        gap: 15px;
+    }
+
+    .title-info {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .socia a {
+        margin: 10px;
+    }
+
+    .Fotter {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        flex-direction: column;
+    }
+
+    .meun {
+        width: 60px;
+        height: 100%;
+    }
+
+    .data-info .box {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .content {
+        width: 50%;
+        margin: 5px 0;
+    }
+
+    .title-info {
+        font-size: 1.1em;
+        padding: 8px;
+    }
+
+    .socia a {
+        margin: 8px;
+        padding: 10px;
+    }
+
+    .Fotter {
+        padding: 8px;
+    }
+}
